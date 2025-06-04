@@ -116,7 +116,7 @@ const PopularProducts = () => {
               {products.map((product, index) => (
                 <Card
                   key={index}
-                  className="flex-shrink-0 w-[calc(20%-1.2rem)] group overflow-hidden bg-slate-700/50 border border-slate-600/50 hover:border-blue-400/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10 rounded-2xl"
+                  className="flex-shrink-0 w-[calc(20%-1.2rem)] group overflow-hidden bg-slate-700/50 border border-slate-600/50 hover:border-blue-400/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10 rounded-2xl flex flex-col"
                 >
                   <div className="aspect-[4/3] bg-slate-600/30 overflow-hidden flex items-center justify-center">
                     <div className="w-16 h-16 text-slate-400">
@@ -153,14 +153,14 @@ const PopularProducts = () => {
                       </svg>
                     </div>
                   </div>
-                  <CardHeader className="p-6">
+                  <CardHeader className="p-6 flex flex-col flex-grow">
                     <CardTitle className="text-lg font-medium text-white mb-2 leading-tight">
                       {product.name}
                     </CardTitle>
-                    <CardDescription className="text-slate-300 mb-4 text-sm leading-relaxed">
+                    <CardDescription className="text-slate-300 mb-4 text-sm leading-relaxed flex-grow">
                       {product.description}
                     </CardDescription>
-                    <div className="flex flex-col gap-3">
+                    <div className="flex flex-col gap-3 mt-auto">
                       <span className="text-xl font-light text-blue-300">
                         {product.price}
                       </span>
