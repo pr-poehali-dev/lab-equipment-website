@@ -10,7 +10,24 @@ import { useState } from "react";
 
 const PopularProducts = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const cardsToShow = 5;
+
+  // Responsive cards count
+  const getCardsToShow = () => {
+    if (typeof window === "undefined") return 5;
+    if (window.innerWidth < 768) return 1; // mobile
+    if (window.innerWidth < 1024) return 2; // tablet
+    if (window.innerWidth < 1280) return 3; // small desktop
+    return 5; // large desktop
+  };
+
+  const [cardsToShow, setCardsToShow] = useState(getCardsToShow);
+
+  // Update cards count on resize
+  useState(() => {
+    const handleResize = () => setCardsToShow(getCardsToShow());
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  });
 
   const products = [
     {
@@ -108,7 +125,7 @@ const PopularProducts = () => {
           {/* Cards container */}
           <div className="overflow-hidden">
             <div
-              className="flex transition-transform duration-300 ease-in-out gap-6"
+              className="flex transition-transform duration-300 ease-in-out gap-3 md:gap-6"
               style={{
                 transform: `translateX(-${currentIndex * (100 / cardsToShow)}%)`,
               }}
@@ -116,7 +133,7 @@ const PopularProducts = () => {
               {products.map((product, index) => (
                 <Card
                   key={index}
-                  className="flex-shrink-0 w-[calc(20%-1.2rem)] group overflow-hidden bg-slate-700/50 border border-slate-600/50 hover:border-blue-400/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10 rounded-2xl flex flex-col"
+                  className="flex-shrink-0 group overflow-hidden bg-slate-700/50 border border-slate-600/50 hover:border-blue-400/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10 rounded-2xl flex flex-col w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] xl:w-[calc(20%-1.2rem)]"
                 >
                   <div className="aspect-[4/3] bg-slate-600/30 overflow-hidden flex items-center justify-center">
                     <div className="w-16 h-16 text-slate-400">
