@@ -14,44 +14,44 @@ const PopularProducts = () => {
 
   const products = [
     {
-      name: "ИК-анализатор зерна SpectraStar 2400",
-      description: "Быстрый анализ влажности, белка, клейковины",
-      price: "от 850 000 ₽",
+      name: "Инфракрасный портативный анализатор IAS-3120",
+      description: "Быстрый анализ влажности, белка, жира в зерне",
+      price: "от 650 000 ₽",
       image:
         "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&h=250&fit=crop",
     },
     {
-      name: "Влагомер зерна Wile 78",
-      description: "Портативный измеритель влажности",
-      price: "от 45 000 ₽",
+      name: "БИК-анализатор Инфраматик 9500",
+      description: "Профессиональный анализ качества зерна",
+      price: "от 1 200 000 ₽",
       image:
         "https://images.unsplash.com/photo-1586281010281-0b82b0b60c1a?w=400&h=250&fit=crop",
     },
     {
-      name: "Весы лабораторные AND GX-6000",
-      description: "Точность 0.01г, калибровка встроенная",
-      price: "от 125 000 ₽",
+      name: "Инфракрасный портативный экспресс анализатор зерна IAS-5100",
+      description: "Компактный прибор для полевых условий",
+      price: "от 750 000 ₽",
       image:
         "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=250&fit=crop",
     },
     {
-      name: "Анализатор клейковины Glutomatic 2200",
-      description: "Автоматическое определение клейковины",
-      price: "от 320 000 ₽",
+      name: "Инфракрасный портативный экспресс анализатор зерна Инфраматик Perten IM8800",
+      description: "Высокоточный анализ с встроенной калибровкой",
+      price: "от 980 000 ₽",
       image:
         "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=400&h=250&fit=crop",
     },
     {
-      name: "pH-метр портативный HI-2020",
-      description: "Водонепроницаемый, автокалибровка",
-      price: "от 25 000 ₽",
+      name: "Портативный ИК анализатор зерна Инфраматик 8800",
+      description: "Надежный анализ основных параметров",
+      price: "от 850 000 ₽",
       image:
         "https://images.unsplash.com/photo-1583912267550-3ee94c8cb5c9?w=400&h=250&fit=crop",
     },
     {
-      name: "Микроскоп цифровой DigiMicro 2.0",
-      description: "Увеличение до 500x, USB-подключение",
-      price: "от 65 000 ₽",
+      name: "Анализатор зерна инфракрасный Infratec",
+      description: "Стационарный прибор для лабораторий",
+      price: "от 1 100 000 ₽",
       image:
         "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=400&h=250&fit=crop",
     },
