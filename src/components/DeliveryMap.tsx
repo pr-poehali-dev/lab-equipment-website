@@ -18,7 +18,7 @@ const DeliveryMap = () => {
             <div className="relative">
               <div className="bg-slate-700/50 p-8 rounded-t-2xl">
                 <img
-                  src="https://cdn.poehali.dev/files/c7582469-f1f5-4ae7-878a-9ef9e94f1d1e.png"
+                  src="https://cdn.poehali.dev/files/c05ef21a-5a85-4086-b096-0a7ef5913b86.png"
                   alt="Карта доставки по России"
                   className="w-full h-auto rounded-xl opacity-90 filter contrast-110"
                 />
