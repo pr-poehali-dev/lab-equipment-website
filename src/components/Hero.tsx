@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
@@ -8,7 +7,7 @@ const Hero = () => {
     <section className="relative bg-slate-900 py-24 overflow-hidden">
       {/* Background with subtle gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.02"%3E%3Ccircle cx="30" cy="30" r="1"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-40"></div>
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.02%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%221%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-40"></div>
       </div>
 
       {/* Content */}
@@ -18,7 +17,9 @@ const Hero = () => {
             <div className="space-y-6">
               <h1 className="text-5xl lg:text-7xl font-light text-white leading-tight tracking-tight">
                 Лабораторное
-                <span className="block text-blue-300 font-normal">оборудование</span>
+                <span className="block text-blue-300 font-normal">
+                  оборудование
+                </span>
                 <span className="block text-3xl lg:text-4xl text-slate-300 font-light mt-2">
                   для аграрного бизнеса
                 </span>
@@ -27,14 +28,17 @@ const Hero = () => {
                 точно • быстро • под ключ
               </p>
             </div>
-            
+
             <div className="flex flex-wrap gap-4">
               {[
                 "Гарантия качества",
-                "Быстрая доставка", 
-                "Техподдержка 24/7"
+                "Быстрая доставка",
+                "Техподдержка 24/7",
               ].map((feature, index) => (
-                <div key={index} className="flex items-center space-x-3 bg-slate-800/60 backdrop-blur-sm px-6 py-3 rounded-full border border-slate-700/50">
+                <div
+                  key={index}
+                  className="flex items-center space-x-3 bg-slate-800/60 backdrop-blur-sm px-6 py-3 rounded-full border border-slate-700/50"
+                >
                   <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
                   <span className="text-slate-200 font-medium">{feature}</span>
                 </div>
@@ -50,7 +54,7 @@ const Hero = () => {
                 </h3>
                 <p className="text-slate-400">Свяжемся в течение 15 минут</p>
               </div>
-              
+
               <div className="space-y-4">
                 <Input
                   placeholder="Ваше имя"
@@ -68,7 +72,7 @@ const Hero = () => {
                   Заказать звонок
                 </Button>
               </div>
-              
+
               <p className="text-xs text-slate-400 text-center leading-relaxed">
                 Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
               </p>
