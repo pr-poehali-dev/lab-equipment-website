@@ -4,11 +4,11 @@ const DeliveryMap = () => {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6 max-w-6xl">
-        <h2 className="text-4xl font-light text-slate-800 text-center mb-16">
+        <h2 className="text-4xl font-light text-gray-800 text-center mb-16">
           География доставки
         </h2>
 
-        <Card className="overflow-hidden border-slate-100">
+        <Card className="overflow-hidden border-gray-200">
           <CardHeader className="p-0">
             <div className="relative">
               <img
@@ -22,31 +22,31 @@ const DeliveryMap = () => {
 
         <div className="grid md:grid-cols-4 gap-6 mt-12">
           <div className="text-center">
-            <h4 className="font-medium text-slate-800 mb-2">Москва и МО</h4>
-            <p className="text-slate-600">от 1-4 дней</p>
+            <h4 className="font-medium text-gray-800 mb-2">Москва и МО</h4>
+            <p className="text-gray-600">от 1-4 дней</p>
           </div>
           <div className="text-center">
-            <h4 className="font-medium text-slate-800 mb-2">
+            <h4 className="font-medium text-gray-800 mb-2">
               Центральная Россия
             </h4>
-            <p className="text-slate-600">от 4-8 дней</p>
+            <p className="text-gray-600">от 4-8 дней</p>
           </div>
           <div className="text-center">
-            <h4 className="font-medium text-slate-800 mb-2">Сибирь</h4>
-            <p className="text-slate-600">от 8-12 дней</p>
+            <h4 className="font-medium text-gray-800 mb-2">Сибирь</h4>
+            <p className="text-gray-600">от 8-12 дней</p>
           </div>
           <div className="text-center">
-            <h4 className="font-medium text-slate-800 mb-2">Дальний Восток</h4>
-            <p className="text-slate-600">от 16-24 дней</p>
+            <h4 className="font-medium text-gray-800 mb-2">Дальний Восток</h4>
+            <p className="text-gray-600">от 16-24 дней</p>
           </div>
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-slate-600 mb-4">
+          <p className="text-gray-600 mb-4">
             Доставляем во все регионы России. Стоимость доставки рассчитывается
             индивидуально.
           </p>
-          <p className="text-sm text-slate-500">
+          <p className="text-sm text-gray-500">
             * Сроки доставки могут варьироваться в зависимости от габаритов
             оборудования
           </p>

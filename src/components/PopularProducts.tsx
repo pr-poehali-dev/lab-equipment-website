@@ -53,7 +53,7 @@ const PopularProducts = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-6 max-w-6xl">
         <h2 className="text-4xl font-light text-slate-800 text-center mb-16">
           Популярные товары
@@ -80,13 +80,13 @@ const PopularProducts = () => {
                   {product.description}
                 </CardDescription>
                 <div className="flex justify-between items-center">
-                  <span className="text-xl font-light text-blue-600">
+                  <span className="text-xl font-light text-gray-700">
                     {product.price}
                   </span>
                   <Button
                     variant="outline"
                     size="sm"
-                    className="border-slate-200"
+                    className="border-gray-300 text-gray-700 hover:bg-gray-100"
                   >
                     Подробнее
                   </Button>

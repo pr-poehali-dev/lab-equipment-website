@@ -47,9 +47,9 @@ const Categories = () => {
   ];
 
   return (
-    <section className="py-20 bg-slate-50">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-6 max-w-6xl">
-        <h2 className="text-4xl font-light text-slate-800 text-center mb-16">
+        <h2 className="text-4xl font-light text-gray-800 text-center mb-16">
           Категории оборудования
         </h2>
 
@@ -57,17 +57,17 @@ const Categories = () => {
           {categories.map((category, index) => (
             <Card
               key={index}
-              className="p-6 bg-white border-slate-100 hover:shadow-md transition-shadow cursor-pointer"
+              className="p-6 bg-gray-50 border-gray-200 hover:shadow-md hover:bg-gray-100 transition-all cursor-pointer"
             >
               <CardHeader className="p-0">
                 <div className="text-4xl mb-4">{category.icon}</div>
-                <CardTitle className="text-xl font-medium text-slate-800 mb-2">
+                <CardTitle className="text-xl font-medium text-gray-800 mb-2">
                   {category.title}
                 </CardTitle>
-                <CardDescription className="text-slate-600 mb-3">
+                <CardDescription className="text-gray-600 mb-3">
                   {category.description}
                 </CardDescription>
-                <span className="text-sm text-blue-600 font-medium">
+                <span className="text-sm text-gray-700 font-medium">
                   {category.count}
                 </span>
               </CardHeader>
