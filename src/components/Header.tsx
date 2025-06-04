@@ -11,7 +11,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img
-              src="https://cdn.poehali.dev/files/89cc56b1-0744-4e7f-9cb0-a319ccfba946.jpg"
+              src="https://cdn.poehali.dev/files/95e28b32-bc73-4c82-ae4a-a7dd4b294934.png"
               alt="ГК Энергия"
               className="h-12 w-auto"
             />
