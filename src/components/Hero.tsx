@@ -1,10 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
+import Header from "@/components/Header";
 
 const Hero = () => {
   return (
     <section className="relative bg-slate-900 py-24 overflow-hidden">
+      {/* Header Navigation */}
+      <Header />
+
       {/* Background with agricultural theme */}
       <div className="absolute inset-0">
         <img
