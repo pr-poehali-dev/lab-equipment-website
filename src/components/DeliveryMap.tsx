@@ -37,8 +37,15 @@ const DeliveryMap = () => {
           ].map((delivery, index) => (
             <Card
               key={index}
-              className="p-6 bg-slate-800/60 border border-slate-700/50 rounded-2xl text-center"
+              className="p-6 bg-slate-800/60 border border-slate-700/50 rounded-2xl text-center group hover:border-blue-400/50 transition-all duration-300"
             >
+              <div className="w-12 h-12 mx-auto mb-4">
+                <img
+                  src="https://cdn.poehali.dev/files/148f9c9b-8123-4160-b83e-0642e9662fd8.png"
+                  alt=""
+                  className="w-full h-full object-contain brightness-0 invert opacity-60 group-hover:opacity-100 transition-all duration-300"
+                />
+              </div>
               <h4 className="font-medium text-white text-lg mb-2">
                 {delivery.region}
               </h4>

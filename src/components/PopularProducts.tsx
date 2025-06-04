@@ -71,38 +71,12 @@ const PopularProducts = () => {
               className="group overflow-hidden bg-slate-700/50 border border-slate-600/50 hover:border-blue-400/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10 rounded-2xl"
             >
               <div className="aspect-[4/3] bg-slate-600/30 overflow-hidden flex items-center justify-center">
-                <div className="w-24 h-24 text-slate-400">
-                  <svg
-                    viewBox="0 0 100 100"
-                    fill="currentColor"
-                    className="w-full h-full"
-                  >
-                    {index === 0 && (
-                      <path d="M20 20h60v10H20zm5 15h50v5H25zm-5 10h60v5H20zm5 10h50v5H25zm-5 10h60v10H20zm10 15h40v15H30z" />
-                    )}
-                    {index === 1 && (
-                      <rect x="30" y="25" width="40" height="50" rx="5" />
-                    )}
-                    {index === 2 && (
-                      <path d="M25 30h50v40H25zm15 10h20v5H40zm-10 10h40v5H30zm5 10h30v5H35z" />
-                    )}
-                    {index === 3 && (
-                      <circle
-                        cx="50"
-                        cy="40"
-                        r="20"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="3"
-                      />
-                    )}
-                    {index === 4 && (
-                      <rect x="35" y="30" width="30" height="40" rx="3" />
-                    )}
-                    {index === 5 && (
-                      <path d="M30 25h40v10H30zm5 15h30v30H35zm10 10h10v10H45z" />
-                    )}
-                  </svg>
+                <div className="w-24 h-24">
+                  <img
+                    src="https://cdn.poehali.dev/files/148f9c9b-8123-4160-b83e-0642e9662fd8.png"
+                    alt={product.name}
+                    className="w-full h-full object-contain brightness-0 invert opacity-60 group-hover:opacity-100 transition-all duration-300"
+                  />
                 </div>
               </div>
               <CardHeader className="p-8">
