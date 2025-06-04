@@ -13,15 +13,17 @@ const DeliveryMap = () => {
           </p>
         </div>
 
-        <Card className="overflow-hidden bg-slate-800/60 border border-slate-700/50 rounded-2xl shadow-2xl">
+        <Card className="overflow-hidden bg-slate-800/60 border border-slate-700/50 rounded-2xl shadow-2xl backdrop-blur-sm">
           <CardHeader className="p-0">
             <div className="relative">
-              <img
-                src="https://cdn.poehali.dev/files/c7582469-f1f5-4ae7-878a-9ef9e94f1d1e.png"
-                alt="Карта доставки по России"
-                className="w-full h-auto"
-              />
-              <div className="absolute inset-0 bg-slate-900/20"></div>
+              <div className="bg-slate-700/50 p-8 rounded-t-2xl">
+                <img
+                  src="https://cdn.poehali.dev/files/c7582469-f1f5-4ae7-878a-9ef9e94f1d1e.png"
+                  alt="Карта доставки по России"
+                  className="w-full h-auto rounded-xl opacity-90 filter contrast-110"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-800/20 to-transparent rounded-t-2xl"></div>
             </div>
           </CardHeader>
         </Card>

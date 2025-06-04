@@ -65,8 +65,12 @@ const Categories = () => {
               className="group p-8 bg-slate-800/60 border border-slate-700/50 hover:border-blue-400/50 hover:bg-slate-700/60 transition-all duration-300 cursor-pointer rounded-2xl hover:shadow-2xl hover:shadow-blue-500/10"
             >
               <CardHeader className="p-0 space-y-6">
-                <div className="text-5xl group-hover:scale-110 transition-transform duration-300">
-                  {category.icon}
+                <div className="w-16 h-16 text-slate-400 group-hover:text-blue-300 transition-colors duration-300">
+                  <img
+                    src="https://cdn.poehali.dev/files/17d61b28-8e47-414e-95f5-8a35610c0dbd.png"
+                    alt={category.title}
+                    className="w-full h-full object-contain filter brightness-75 group-hover:brightness-100 transition-all duration-300"
+                  />
                 </div>
                 <div className="space-y-3">
                   <CardTitle className="text-2xl font-medium text-white group-hover:text-blue-300 transition-colors">
