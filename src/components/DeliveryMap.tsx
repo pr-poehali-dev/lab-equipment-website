@@ -1,14 +1,19 @@
-import { Card, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardHeader } from "@/components/ui/card";
 
 const DeliveryMap = () => {
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-6 max-w-6xl">
-        <h2 className="text-4xl font-light text-gray-800 text-center mb-16">
-          География доставки
-        </h2>
+    <section className="py-24 bg-slate-900">
+      <div className="container mx-auto px-6 max-w-7xl">
+        <div className="text-center space-y-4 mb-20">
+          <h2 className="text-5xl font-light text-white tracking-tight">
+            География доставки
+          </h2>
+          <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+            Доставляем лабораторное оборудование по всей России
+          </p>
+        </div>
 
-        <Card className="overflow-hidden border-gray-200">
+        <Card className="overflow-hidden bg-slate-800/60 border border-slate-700/50 rounded-2xl shadow-2xl">
           <CardHeader className="p-0">
             <div className="relative">
               <img
@@ -16,37 +21,36 @@ const DeliveryMap = () => {
                 alt="Карта доставки по России"
                 className="w-full h-auto"
               />
+              <div className="absolute inset-0 bg-slate-900/20"></div>
             </div>
           </CardHeader>
         </Card>
 
-        <div className="grid md:grid-cols-4 gap-6 mt-12">
-          <div className="text-center">
-            <h4 className="font-medium text-gray-800 mb-2">Москва и МО</h4>
-            <p className="text-gray-600">от 1-4 дней</p>
-          </div>
-          <div className="text-center">
-            <h4 className="font-medium text-gray-800 mb-2">
-              Центральная Россия
-            </h4>
-            <p className="text-gray-600">от 4-8 дней</p>
-          </div>
-          <div className="text-center">
-            <h4 className="font-medium text-gray-800 mb-2">Сибирь</h4>
-            <p className="text-gray-600">от 8-12 дней</p>
-          </div>
-          <div className="text-center">
-            <h4 className="font-medium text-gray-800 mb-2">Дальний Восток</h4>
-            <p className="text-gray-600">от 16-24 дней</p>
-          </div>
+        <div className="grid md:grid-cols-4 gap-8 mt-16">
+          {[
+            { region: "Москва и МО", time: "от 1-4 дней" },
+            { region: "Центральная Россия", time: "от 4-8 дней" },
+            { region: "Сибирь", time: "от 8-12 дней" },
+            { region: "Дальний Восток", time: "от 16-24 дней" },
+          ].map((delivery, index) => (
+            <Card
+              key={index}
+              className="p-6 bg-slate-800/60 border border-slate-700/50 rounded-2xl text-center"
+            >
+              <h4 className="font-medium text-white text-lg mb-2">
+                {delivery.region}
+              </h4>
+              <p className="text-blue-300 font-light">{delivery.time}</p>
+            </Card>
+          ))}
         </div>
 
-        <div className="text-center mt-12">
-          <p className="text-gray-600 mb-4">
+        <div className="text-center mt-16 space-y-4">
+          <p className="text-slate-300 text-lg max-w-3xl mx-auto leading-relaxed">
             Доставляем во все регионы России. Стоимость доставки рассчитывается
             индивидуально.
           </p>
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-slate-400">
             * Сроки доставки могут варьироваться в зависимости от габаритов
             оборудования
           </p>
