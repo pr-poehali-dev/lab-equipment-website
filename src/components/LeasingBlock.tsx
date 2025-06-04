@@ -42,13 +42,8 @@ const LeasingBlock = () => {
                 },
               ].map((item, index) => (
                 <div key={index} className="flex items-center space-x-6">
-                  <div className="w-16 h-16 bg-blue-600/20 border border-blue-500/30 rounded-2xl flex items-center justify-center relative">
-                    <img
-                      src="https://cdn.poehali.dev/files/148f9c9b-8123-4160-b83e-0642e9662fd8.png"
-                      alt=""
-                      className="w-8 h-8 object-contain brightness-0 invert opacity-30 absolute"
-                    />
-                    <span className="text-blue-300 font-semibold text-lg relative z-10">
+                  <div className="w-16 h-16 bg-blue-600/20 border border-blue-500/30 rounded-2xl flex items-center justify-center">
+                    <span className="text-blue-300 font-semibold text-lg">
                       {item.value}
                     </span>
                   </div>
