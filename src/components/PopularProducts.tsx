@@ -167,9 +167,9 @@ const PopularProducts = () => {
                       <Button
                         variant="outline"
                         size="sm"
-                        className="border-slate-500 text-slate-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-200"
+                        className="bg-transparent border-white text-white hover:bg-white hover:text-slate-800 transition-all duration-200"
                       >
-                        Подробнее
+                        Заказать
                       </Button>
                     </div>
                   </CardHeader>
