@@ -43,8 +43,8 @@ const Header = () => {
             </div>
 
             <Button
-              variant="outline"
-              className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white"
+              variant="ghost"
+              className="text-blue-400 hover:bg-blue-400/20 hover:text-blue-300 border border-transparent"
             >
               Связаться
             </Button>
