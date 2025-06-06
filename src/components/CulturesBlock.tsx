@@ -1,52 +1,17 @@
 import Icon from "@/components/ui/icon";
 import WheatIcon from "@/components/icons/WheatIcon";
-import BarleyIcon from "@/components/icons/BarleyIcon";
-import CornIcon from "@/components/icons/CornIcon";
-import SoyIcon from "@/components/icons/SoyIcon";
-import SunflowerIcon from "@/components/icons/SunflowerIcon";
-import RapeIcon from "@/components/icons/RapeIcon";
-import SorghumIcon from "@/components/icons/SorghumIcon";
-import MealIcon from "@/components/icons/MealIcon";
 
 const CulturesBlock = () => {
   const cultures = [
-    { name: "Пшеница", component: "wheat" },
-    { name: "Ячмень", component: "barley" },
-    { name: "Кукуруза", component: "corn" },
-    { name: "Соя", component: "soy" },
-    { name: "Подсолнечник", component: "sunflower" },
-    { name: "Рапс", component: "rape" },
-    { name: "Сорго", component: "sorghum" },
-    { name: "Жмыхи и шрота", component: "meal" },
+    { name: "Пшеница", icon: "Wheat" },
+    { name: "Ячмень", icon: "Wheat" },
+    { name: "Кукуруза", icon: "Corn" },
+    { name: "Соя", icon: "Bean" },
+    { name: "Подсолнечник", icon: "Sun" },
+    { name: "Рапс", icon: "Flower" },
+    { name: "Сорго", icon: "Wheat" },
+    { name: "Жмыхи и шрота", icon: "Grain" },
   ];
-
-  const renderIcon = (component: string) => {
-    const iconProps = {
-      size: 32,
-      className: "text-blue-300 group-hover:text-blue-200 transition-colors",
-    };
-
-    switch (component) {
-      case "wheat":
-        return <WheatIcon {...iconProps} />;
-      case "barley":
-        return <BarleyIcon {...iconProps} />;
-      case "corn":
-        return <CornIcon {...iconProps} />;
-      case "soy":
-        return <SoyIcon {...iconProps} />;
-      case "sunflower":
-        return <SunflowerIcon {...iconProps} />;
-      case "rape":
-        return <RapeIcon {...iconProps} />;
-      case "sorghum":
-        return <SorghumIcon {...iconProps} />;
-      case "meal":
-        return <MealIcon {...iconProps} />;
-      default:
-        return <Icon name="Circle" {...iconProps} fallback="Circle" />;
-    }
-  };
 
   return (
     <section className="py-20 bg-gradient-to-b from-slate-800 to-slate-900">
@@ -68,7 +33,19 @@ const CulturesBlock = () => {
               className="flex flex-col items-center text-center group hover:scale-105 transition-transform duration-300"
             >
               <div className="w-16 h-16 mb-4 flex items-center justify-center rounded-full bg-slate-700/50 group-hover:bg-slate-600/60 transition-colors">
-                {renderIcon(culture.component)}
+                {culture.name === "Пшеница" ? (
+                  <WheatIcon
+                    size={32}
+                    className="text-blue-300 group-hover:text-blue-200 transition-colors"
+                  />
+                ) : (
+                  <Icon
+                    name={culture.icon}
+                    size={32}
+                    className="text-blue-300 group-hover:text-blue-200 transition-colors"
+                    fallback="Circle"
+                  />
+                )}
               </div>
               <span className="text-slate-200 font-medium text-sm leading-tight">
                 {culture.name}
