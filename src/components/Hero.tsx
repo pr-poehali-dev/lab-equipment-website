@@ -62,7 +62,7 @@ const Hero = () => {
                 <h3 className="text-2xl font-light text-white">
                   Получить консультацию
                 </h3>
-                <p className="text-slate-400">Свяжемся в течение 15 минут</p>
+                <p className="text-slate-400">Свяжемся в течение 5 минут</p>
               </div>
 
               <div className="space-y-4">
