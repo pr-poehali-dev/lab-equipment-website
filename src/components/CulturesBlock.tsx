@@ -1,4 +1,5 @@
 import Icon from "@/components/ui/icon";
+import WheatIcon from "@/components/icons/WheatIcon";
 
 const CulturesBlock = () => {
   const cultures = [
@@ -33,10 +34,9 @@ const CulturesBlock = () => {
             >
               <div className="w-16 h-16 mb-4 flex items-center justify-center rounded-full bg-slate-700/50 group-hover:bg-slate-600/60 transition-colors">
                 {culture.name === "Пшеница" ? (
-                  <img
-                    src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=64&h=64&fit=crop&crop=center"
-                    alt="Пшеница"
-                    className="w-8 h-8 object-cover rounded filter brightness-0 invert opacity-80 group-hover:opacity-100 transition-opacity"
+                  <WheatIcon
+                    size={32}
+                    className="text-blue-300 group-hover:text-blue-200 transition-colors"
                   />
                 ) : (
                   <Icon
