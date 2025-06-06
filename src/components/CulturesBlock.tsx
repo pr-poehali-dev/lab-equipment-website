@@ -17,11 +17,11 @@ const CulturesBlock = () => {
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-light text-white mb-4">
-            Что можно анализировать
+            Наши приборы подходят для любых культур и задач агробизнеса
           </h2>
           <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-            Наши приборы подходят для любых культур
-            <br />и задач агробизнеса
+            Основные параметры: влажность, белок, клейковина, масличность,
+            зольность и др.
           </p>
         </div>
 
@@ -52,6 +52,86 @@ const CulturesBlock = () => {
               </span>
             </div>
           ))}
+        </div>
+
+        {/* Преимущества для клиентов */}
+        <div className="mt-20 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="bg-slate-800/50 rounded-xl p-6 backdrop-blur-sm border border-slate-700/50">
+            <div className="flex items-start gap-4">
+              <Icon
+                name="Zap"
+                size={24}
+                className="text-yellow-400 mt-1 flex-shrink-0"
+              />
+              <div>
+                <h3 className="text-white font-semibold mb-2">
+                  Точная оценка качества
+                </h3>
+                <p className="text-slate-300 text-sm">
+                  Мгновенные результаты без необходимости в лабораторных
+                  анализах.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-slate-800/50 rounded-xl p-6 backdrop-blur-sm border border-slate-700/50">
+            <div className="flex items-start gap-4">
+              <Icon
+                name="Shield"
+                size={24}
+                className="text-green-400 mt-1 flex-shrink-0"
+              />
+              <div>
+                <h3 className="text-white font-semibold mb-2">
+                  Независимость от сторонних услуг
+                </h3>
+                <p className="text-slate-300 text-sm">
+                  Вы получаете полную автономию в процессе контроля качества
+                  продукции, без зависимостей от лабораторий.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-slate-800/50 rounded-xl p-6 backdrop-blur-sm border border-slate-700/50">
+            <div className="flex items-start gap-4">
+              <Icon
+                name="Heart"
+                size={24}
+                className="text-blue-400 mt-1 flex-shrink-0"
+              />
+              <div>
+                <h3 className="text-white font-semibold mb-2">
+                  Удобство в работе
+                </h3>
+                <p className="text-slate-300 text-sm">
+                  Простота использования, надежность и низкие эксплуатационные
+                  расходы.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-slate-800/50 rounded-xl p-6 backdrop-blur-sm border border-slate-700/50">
+            <div className="flex items-start gap-4">
+              <Icon
+                name="Users"
+                size={24}
+                className="text-purple-400 mt-1 flex-shrink-0"
+              />
+              <div>
+                <h3 className="text-white font-semibold mb-2">
+                  Мы все сделаем за вас
+                </h3>
+                <p className="text-slate-300 text-sm">
+                  Подберем подходящее оборудование, откалибруем его, привезем и
+                  настроим, а также обучим ваших специалистов для эффективной
+                  работы с устройствами.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="text-center mt-16">
