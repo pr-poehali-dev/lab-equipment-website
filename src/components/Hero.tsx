@@ -31,11 +31,11 @@ const Hero = () => {
                   оборудование
                 </span>
                 <span className="block text-3xl lg:text-4xl text-slate-300 font-light mt-2">
-                  для аграрного бизнеса
+                  Анализаторы
                 </span>
               </h1>
               <p className="text-2xl text-slate-300 font-light tracking-wide">
-                точно • быстро • под ключ
+                для любых культур{" "}
               </p>
             </div>
 
