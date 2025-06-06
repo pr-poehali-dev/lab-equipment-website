@@ -34,7 +34,7 @@ const CulturesBlock = () => {
               <div className="w-16 h-16 mb-4 flex items-center justify-center rounded-full bg-slate-700/50 group-hover:bg-slate-600/60 transition-colors">
                 {culture.name === "Пшеница" ? (
                   <img
-                    src="https://cdn.poehali.dev/files/b41afd70-3529-47d1-bdcf-f4e26541c7b3.png"
+                    src="https://cdn.poehali.dev/files/97e10995-eb0a-41ee-9461-0b7a4c2b9d9b.jpg"
                     alt="Пшеница"
                     className="w-8 h-8 object-contain filter brightness-0 invert opacity-80 group-hover:opacity-100 transition-opacity"
                   />
