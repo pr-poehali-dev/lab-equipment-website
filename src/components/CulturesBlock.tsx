@@ -1,4 +1,3 @@
-import { Card } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 
 const CulturesBlock = () => {
@@ -10,97 +9,47 @@ const CulturesBlock = () => {
     { name: "Подсолнечник", icon: "Sun" },
     { name: "Рапс", icon: "Flower2" },
     { name: "Сорго", icon: "Sprout" },
-    { name: "Жмыхи", icon: "Package" },
-  ];
-
-  const parameters = [
-    "Влажность",
-    "Белок",
-    "Клейковина",
-    "Масличность",
-    "Зольность",
-    "Крахмал",
+    { name: "Жмыхи и шрота", icon: "Package" },
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-slate-50 to-white">
-      <div className="container mx-auto px-6 max-w-7xl">
+    <section className="py-20 bg-gradient-to-b from-slate-800 to-slate-900">
+      <div className="container mx-auto px-6 max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-light text-slate-800 mb-6">
-            Подходит для любых культур
+          <h2 className="text-4xl lg:text-5xl font-light text-white mb-4">
+            Что можно анализировать
           </h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Наши анализаторы обеспечивают{" "}
-            <span className="font-semibold text-amber-600">
-              быстрый и точный анализ
-            </span>{" "}
-            широкого спектра сельскохозяйственных культур и продуктов их
-            переработки
+          <p className="text-lg text-slate-300 max-w-2xl mx-auto">
+            Наши приборы подходят для любых культур
+            <br />и задач агробизнеса
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Культуры */}
-          <Card className="p-8 shadow-lg border-0 bg-white/80 backdrop-blur-sm">
-            <h3 className="text-2xl font-semibold text-slate-800 mb-6 flex items-center gap-3">
-              <Icon name="Sprout" size={28} className="text-green-600" />
-              Анализируемые культуры
-            </h3>
-            <div className="grid grid-cols-2 gap-4">
-              {cultures.map((culture) => (
-                <div
-                  key={culture.name}
-                  className="flex items-center gap-3 p-3 rounded-lg hover:bg-amber-50 transition-colors"
-                >
-                  <Icon
-                    name={culture.icon}
-                    size={20}
-                    className="text-amber-600 flex-shrink-0"
-                    fallback="Circle"
-                  />
-                  <span className="text-slate-700 font-medium">
-                    {culture.name}
-                  </span>
-                </div>
-              ))}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+          {cultures.map((culture) => (
+            <div
+              key={culture.name}
+              className="flex flex-col items-center text-center group hover:scale-105 transition-transform duration-300"
+            >
+              <div className="w-16 h-16 mb-4 flex items-center justify-center rounded-full bg-slate-700/50 group-hover:bg-slate-600/60 transition-colors">
+                <Icon
+                  name={culture.icon}
+                  size={32}
+                  className="text-blue-300 group-hover:text-blue-200 transition-colors"
+                  fallback="Circle"
+                />
+              </div>
+              <span className="text-slate-200 font-medium text-sm leading-tight">
+                {culture.name}
+              </span>
             </div>
-          </Card>
-
-          {/* Показатели */}
-          <Card className="p-8 shadow-lg border-0 bg-white/80 backdrop-blur-sm">
-            <h3 className="text-2xl font-semibold text-slate-800 mb-6 flex items-center gap-3">
-              <Icon name="BarChart3" size={28} className="text-blue-600" />
-              Определяемые показатели
-            </h3>
-            <div className="space-y-4">
-              {parameters.map((param) => (
-                <div
-                  key={param}
-                  className="flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-colors"
-                >
-                  <Icon
-                    name="CheckCircle"
-                    size={20}
-                    className="text-blue-600"
-                  />
-                  <span className="text-slate-700 font-medium">{param}</span>
-                </div>
-              ))}
-            </div>
-            <div className="mt-6 p-4 bg-gradient-to-r from-blue-50 to-amber-50 rounded-lg">
-              <p className="text-sm text-slate-600 flex items-center gap-2">
-                <Icon name="Zap" size={16} className="text-amber-600" />
-                Результат анализа готов за несколько минут с высокой точностью
-              </p>
-            </div>
-          </Card>
+          ))}
         </div>
 
-        {/* Призыв к действию */}
-        <div className="text-center mt-12">
-          <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-amber-100 to-blue-100 rounded-full">
-            <Icon name="Shield" size={20} className="text-green-600" />
-            <span className="text-slate-700 font-medium">
+        <div className="text-center mt-16">
+          <div className="inline-flex items-center gap-2 px-6 py-3 bg-slate-700/50 rounded-full backdrop-blur-sm">
+            <Icon name="Shield" size={20} className="text-green-400" />
+            <span className="text-slate-200 font-medium">
               Доверие агропроизводителей по всей России
             </span>
           </div>
