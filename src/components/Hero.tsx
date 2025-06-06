@@ -30,12 +30,12 @@ const Hero = () => {
                 <span className="block text-blue-300 font-normal">
                   оборудование
                 </span>
-                <span className="block text-3xl lg:text-4xl text-slate-300 font-light mt-2">
-                  Анализаторы
+                <span className="block lg:text-4xl mt-2 font-light text-[#ffffff] text-3xl">
+                  ИК Анализаторы - для точных измерений
                 </span>
               </h1>
               <p className="text-2xl text-slate-300 font-light tracking-wide">
-                для любых культур{" "}
+                любые культуры
               </p>
             </div>
 
