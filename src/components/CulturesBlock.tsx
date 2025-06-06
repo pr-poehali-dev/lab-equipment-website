@@ -3,13 +3,13 @@ import Icon from "@/components/ui/icon";
 const CulturesBlock = () => {
   const cultures = [
     { name: "Пшеница", icon: "Wheat" },
-    { name: "Ячмень", icon: "Cherry" },
-    { name: "Кукуруза", icon: "Corn" },
-    { name: "Соя", icon: "Bean" },
-    { name: "Подсолнечник", icon: "Sun" },
+    { name: "Ячмень", icon: "Wheat" },
+    { name: "Кукуруза", icon: "Carrot" },
+    { name: "Соя", icon: "Grape" },
+    { name: "Подсолнечник", icon: "Flower" },
     { name: "Рапс", icon: "Flower2" },
-    { name: "Сорго", icon: "Sprout" },
-    { name: "Жмыхи и шрота", icon: "Package" },
+    { name: "Сорго", icon: "Wheat" },
+    { name: "Жмыхи и шрота", icon: "Package2" },
   ];
 
   return (
