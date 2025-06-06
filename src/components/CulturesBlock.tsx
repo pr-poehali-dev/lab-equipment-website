@@ -32,12 +32,20 @@ const CulturesBlock = () => {
               className="flex flex-col items-center text-center group hover:scale-105 transition-transform duration-300"
             >
               <div className="w-16 h-16 mb-4 flex items-center justify-center rounded-full bg-slate-700/50 group-hover:bg-slate-600/60 transition-colors">
-                <Icon
-                  name={culture.icon}
-                  size={32}
-                  className="text-blue-300 group-hover:text-blue-200 transition-colors"
-                  fallback="Circle"
-                />
+                {culture.name === "Пшеница" ? (
+                  <img
+                    src="https://cdn.poehali.dev/files/b41afd70-3529-47d1-bdcf-f4e26541c7b3.png"
+                    alt="Пшеница"
+                    className="w-8 h-8 object-contain filter brightness-0 invert opacity-80 group-hover:opacity-100 transition-opacity"
+                  />
+                ) : (
+                  <Icon
+                    name={culture.icon}
+                    size={32}
+                    className="text-blue-300 group-hover:text-blue-200 transition-colors"
+                    fallback="Circle"
+                  />
+                )}
               </div>
               <span className="text-slate-200 font-medium text-sm leading-tight">
                 {culture.name}
