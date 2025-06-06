@@ -5,9 +5,32 @@ const Header = () => {
   const menuItems = ["Оборудование", "Услуги", "О компании", "Контакты"];
 
   return (
-    <header className="absolute top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-700/50">
-      <div className="container mx-auto px-6 max-w-7xl">
-        <div className="flex items-center justify-between py-4">
+    <header className="absolute top-0 left-0 right-0 z-50">
+      {/* Top bar with address and WhatsApp */}
+      <div className="bg-slate-800/90 backdrop-blur-sm border-b border-slate-700/30">
+        <div className="container mx-auto px-6 max-w-7xl">
+          <div className="flex items-center justify-between py-2">
+            <div className="flex items-center space-x-2">
+              <Icon name="MapPin" size={16} className="text-slate-400" />
+              <span className="text-slate-300 text-sm">г. Воронеж</span>
+            </div>
+            <a
+              href="https://wa.me/78003500295"
+              className="flex items-center space-x-2 text-green-400 hover:text-green-300 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon name="MessageCircle" size={16} />
+              <span className="text-sm hidden sm:inline">WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Main header */}
+      <div className="bg-slate-900/80 backdrop-blur-md border-b border-slate-700/50">
+        <div className="container mx-auto px-6 max-w-7xl">
+          <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="flex items-center">
             <img
