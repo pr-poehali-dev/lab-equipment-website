@@ -40,19 +40,19 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-wrap gap-4">
-              {[
-                "Гарантия качества",
-                "Быстрая доставка",
-                "Техподдержка 24/7",
-              ].map((feature, index) => (
-                <div
-                  key={index}
-                  className="flex items-center space-x-3 bg-slate-800/60 backdrop-blur-sm px-6 py-3 rounded-full border border-slate-700/50"
-                >
-                  <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                  <span className="text-slate-200 font-medium">{feature}</span>
-                </div>
-              ))}
+              {["Наличие", "Калибровка и Обучение", "Доставка по РФ"].map(
+                (feature, index) => (
+                  <div
+                    key={index}
+                    className="flex items-center space-x-3 bg-slate-800/60 backdrop-blur-sm px-6 py-3 rounded-full border border-slate-700/50"
+                  >
+                    <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                    <span className="text-slate-200 font-medium">
+                      {feature}
+                    </span>
+                  </div>
+                ),
+              )}
             </div>
           </div>
 
