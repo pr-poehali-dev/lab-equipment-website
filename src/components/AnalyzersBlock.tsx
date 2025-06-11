@@ -58,7 +58,7 @@ const AnalyzersBlock = () => {
                     <img
                       src="https://cdn.poehali.dev/files/61d0ff5c-4c47-47fc-91bf-3f583c1c1274.jpg"
                       alt="Perten логотип"
-                      className="w-16 h-16 object-contain"
+                      className="w-14 h-14 object-contain rounded-sm"
                     />
                   ) : (
                     <span className="text-xs font-medium text-slate-400">
