@@ -54,6 +54,12 @@ const AnalyzersBlock = () => {
                       alt="FOSS логотип"
                       className="w-16 h-16 object-contain rounded-full"
                     />
+                  ) : partner === "Perten" ? (
+                    <img
+                      src="https://cdn.poehali.dev/files/61d0ff5c-4c47-47fc-91bf-3f583c1c1274.jpg"
+                      alt="Perten логотип"
+                      className="w-16 h-16 object-contain"
+                    />
                   ) : (
                     <span className="text-xs font-medium text-slate-400">
                       LOGO
