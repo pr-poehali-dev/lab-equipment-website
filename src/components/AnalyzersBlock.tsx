@@ -50,7 +50,7 @@ const AnalyzersBlock = () => {
                 <div className="w-20 h-20 bg-slate-800/50 backdrop-blur-sm rounded-full border border-slate-700/50 flex items-center justify-center hover:border-green-500/50 hover:bg-slate-700/50 transition-all duration-300 ring-1 ring-white/5">
                   {partner === "FOSS" ? (
                     <img
-                      src="https://cdn.poehali.dev/files/2ff59f69-bc8d-449a-bdd1-625d8e9495da.jpg"
+                      src="https://cdn.poehali.dev/files/1476f4aa-91da-4d3e-8b12-ca21304d2eb6.jpg"
                       alt="FOSS логотип"
                       className="w-16 h-16 object-contain rounded-full"
                     />
