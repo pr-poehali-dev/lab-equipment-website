@@ -48,9 +48,17 @@ const AnalyzersBlock = () => {
             {partners.map((partner, index) => (
               <div key={index} className="flex flex-col items-center space-y-3">
                 <div className="w-20 h-20 bg-slate-800/50 backdrop-blur-sm rounded-full border border-slate-700/50 flex items-center justify-center hover:border-green-500/50 hover:bg-slate-700/50 transition-all duration-300 ring-1 ring-white/5">
-                  <span className="text-xs font-medium text-slate-400">
-                    LOGO
-                  </span>
+                  {partner === "FOSS" ? (
+                    <img
+                      src="https://cdn.poehali.dev/files/2ff59f69-bc8d-449a-bdd1-625d8e9495da.jpg"
+                      alt="FOSS логотип"
+                      className="w-16 h-16 object-contain rounded-full"
+                    />
+                  ) : (
+                    <span className="text-xs font-medium text-slate-400">
+                      LOGO
+                    </span>
+                  )}
                 </div>
                 <span className="text-sm font-medium text-slate-300">
                   {partner}
