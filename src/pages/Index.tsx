@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import CulturesBlock from "@/components/CulturesBlock";
+import AnalyzersBlock from "@/components/AnalyzersBlock";
 import DeliveryMap from "@/components/DeliveryMap";
 
 const Index = () => {
@@ -7,6 +8,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Hero />
       <CulturesBlock />
+      <AnalyzersBlock />
       <DeliveryMap />
     </div>
   );
